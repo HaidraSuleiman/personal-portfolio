@@ -42,7 +42,7 @@ export default function Hero() {
 
   return (
     <div
-      className="h-screen grid place-items-center"
+      className="min-h-screen px-96 flex flex-col items-center justify-center"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
     >
@@ -84,7 +84,7 @@ export default function Hero() {
           ))}
         </div>
         <a
-          href="#"
+          href="mailto:h.souleman@icloud.com"
           className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
         >
           Contact me
