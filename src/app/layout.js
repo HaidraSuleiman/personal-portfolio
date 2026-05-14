@@ -10,6 +10,10 @@ export const metadata = {
   title: "Haidra Suleiman",
   description: "Portfolio Website",
 };
+export const viewport = {
+  width: "device-width",
+  initialScale: 0.6,
+};
 
 export default function RootLayout({ children }) {
   return (
