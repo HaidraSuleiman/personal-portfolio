@@ -81,7 +81,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
+      <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10 max-lg:w-160 max-lg:gap-x-2 max-lg:gap-y-3">
         {aboutData.map((item, i) => (
           <Achievements
             key={i}
