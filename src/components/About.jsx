@@ -1,7 +1,8 @@
 "use client";
 import Heading from "./sub/Heading";
 import { motion } from "framer-motion";
-import { aboutText, downloadIcon, arrowLeftIcon } from "@/assests";
+import { aboutText, downloadIcon, arrowLeftIcon, aboutData } from "@/assests";
+import Achievements from "./sub/Achievements";
 
 export default function About() {
   const words = aboutText.split(" ");
@@ -80,7 +81,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
+      <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
         {aboutData.map((item, i) => (
           <Achievements
             key={i}
@@ -89,7 +90,7 @@ export default function About() {
             title={item.title}
           />
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
