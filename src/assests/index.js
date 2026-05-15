@@ -219,18 +219,21 @@ export const projectsData = [
     desc: "A restaurante website for customers to browse the menue choose and order their favourite meals  ",
     url: "/projects/project-1.jpg",
     tech: ["HTML", "CSS", "JavaScript", "ReactJS", "FireBase"],
+    visiturl: "https://haidrasuleiman.github.io/reactmeals/",
   },
   {
     name: "Investment Calculator",
     desc: "A simple easy to use investment calculator React app .",
     url: "/projects/project-2.jpg",
     tech: ["HTML", "CSS", "JavaScript", "Photoshop"],
+    visiturl: "https://haidrasuleiman.github.io/React-Investement-Calculator/",
   },
   {
     name: "IT Instructors",
-    desc: "Whether you are a senior in web developement that wants to spread the knowledge and coach the new generation, or you're an aspiring junior looking for an instructor or a coach to lead the way, this web app made by vueJS is for you.",
+    desc: "Whether you are a senior that wants to spread the knowledge, or you're an aspiring junior looking for an instructor to lead the way, this web app made by vueJS is for you.",
     url: "/projects/project-3.jpg",
     tech: ["HTML", "CSS", "JavaScript", "VueJS"],
+    visiturl: "https://vue-coach-project-3ee5c.web.app/coaches",
   },
   {
     name: "WanderLuxeTravels.co",

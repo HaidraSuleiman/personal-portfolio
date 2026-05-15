@@ -28,7 +28,7 @@ export default function Project({ data, index }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: show ? 1 : 0 }}
-        className={`absolute top-0 w-full h-full flex flex-col items-center justify-center gap-y-2 bg-white/95 p-6 rounded-lg `}
+        className={`absolute top-0 w-full h-full flex flex-col items-center justify-center gap-y-1 bg-white/95 p-6 rounded-lg `}
       >
         <h2 className="text-lg font-bold tracking-wide text-gray-500">
           {data.name}
@@ -36,6 +36,13 @@ export default function Project({ data, index }) {
         <p className="text-justify text-gray-500 first-letter:pl-2">
           {data.desc}
         </p>
+        {data.visiturl && (
+          <span className="text-yellow-400 font-bold hover:text-yellow-500 tracking-wide pb-2 ">
+            <a href={data.visiturl} target="_blank">
+              Visit Website
+            </a>
+          </span>
+        )}
       </motion.div>
     </motion.div>
   );
