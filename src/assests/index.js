@@ -215,22 +215,22 @@ export const reviewsData = [
 // Projects
 export const projectsData = [
   {
-    name: "SparkleGrove.com",
-    desc: "A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.",
-    url: "/projects/image-1.jpg",
-    tech: ["Figma", "Photoshop", "HTML"],
+    name: "ReactFood.com",
+    desc: "A restaurante website for customers to browse the menue choose and order their favourite meals  ",
+    url: "/projects/project-1.jpg",
+    tech: ["HTML", "CSS", "JavaScript", "ReactJS", "FireBase"],
   },
   {
-    name: "TechTrekker.net",
-    desc: "A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.",
-    url: "/projects/image-2.jpg",
-    tech: ["Figma", "Photoshop"],
+    name: "Investment Calculator",
+    desc: "A simple easy to use investment calculator React app .",
+    url: "/projects/project-2.jpg",
+    tech: ["HTML", "CSS", "JavaScript", "Photoshop"],
   },
   {
-    name: "CozyNestHomes.org",
-    desc: "A resource for homeowners and renters alike, offering tips on interior design, home improvement projects, and sustainable living practices.",
-    url: "/projects/image-3.jpg",
-    tech: ["HTML", "CSS", "JavaScript"],
+    name: "IT Instructors",
+    desc: "Whether you are a senior in web developement that wants to spread the knowledge and coach the new generation, or you're an aspiring junior looking for an instructor or a coach to lead the way, this web app made by vueJS is for you.",
+    url: "/projects/project-3.jpg",
+    tech: ["HTML", "CSS", "JavaScript", "VueJS"],
   },
   {
     name: "WanderLuxeTravels.co",
@@ -278,8 +278,6 @@ export const projectsData = [
 
 export const projectsButton = [
   "All",
-  "Figma",
-  "Photoshop",
   "HTML",
   "CSS",
   "JavaScript",
@@ -287,7 +285,8 @@ export const projectsButton = [
   "TailwindCSS",
   "NextJS",
   "FramerMotion",
-  "ThreeJS",
+  "VueJS",
+  "FireBase",
 ];
 
 // Pricing Plans

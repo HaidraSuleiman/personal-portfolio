@@ -31,7 +31,7 @@ export default function Reviews() {
   }, [index]);
 
   return (
-    <div className="my-20 px-96">
+    <div className="my-20 px-96 flex flex-col items-center justify-center">
       <Heading title="Reviews" />
       <div className="flex flex-col items-center justify-center">
         <motion.div
