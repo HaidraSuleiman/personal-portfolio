@@ -17,7 +17,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${outfit.variable}`}>
+    <html lang="en" className={`${outfit.variable} scroll-smooth`}>
       <body className="min-h-full flex flex-col bg-zinc-50 ">{children}</body>
     </html>
   );

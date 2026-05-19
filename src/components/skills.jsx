@@ -20,7 +20,10 @@ export default function Skills() {
     },
   };
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-y-20 px-96">
+    <div
+      id="skills"
+      className="min-h-[50vh] flex flex-col items-center justify-center gap-y-20"
+    >
       <Heading title={"Skills"} />
       <div className=" max-lg:w-150 flex justify-between flex-wrap gap-x-8 gap-y-10 max-lg:gap-y-6">
         {skillsData.map((skill, i) => (

@@ -15,7 +15,10 @@ export default function Experience() {
 
   const scrollY = useSpring(scrollYProgress, { stiffness: 200, damping: 20 });
   return (
-    <div className="min-h-[50vh] pb-60 px-96 flex flex-col items-center justify-center ">
+    <div
+      id="experience"
+      className="min-h-[50vh] pb-60 flex flex-col items-center justify-center "
+    >
       <div className="w-100">
         <Heading title="Experience & Education" />
       </div>
@@ -36,12 +39,12 @@ export default function Experience() {
                 once: true,
               }}
               transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
-              className="relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-4 tracking-wide max-sm:text-sm max-lg:z-10"
+              className="relative flex flex-col gap-y-3 rounded-md border border-red-300 dark:border-yellow-500 bg-white p-4 tracking-wide max-sm:text-sm max-lg:z-10 dark:bg-zinc-700 transition-colors"
             >
-              <h1 className="text-xl max-sm:text-lg font-light text-gray-700 ">
+              <h1 className="text-xl max-sm:text-lg font-light text-gray-700 dark:text-yellow-500 transition-colors">
                 {data.title}
               </h1>
-              <p className="text-gray-800">
+              <p className="text-gray-800 dark:text-gray-100 transition-colors">
                 <span className="block font-light">
                   {data.education.includes("Welbond") ? "Company" : "Education"}
                 </span>
@@ -49,7 +52,7 @@ export default function Experience() {
                   {data.education}
                 </span>
               </p>
-              <div className="text-gray-800 ">
+              <div className="text-gray-800 dark:text-gray-200">
                 <span className="font-light">Experience</span>
                 <ul className="pl-2">
                   {data.experience.map((exp, j) => (
@@ -66,7 +69,7 @@ export default function Experience() {
               </span>
             </motion.div>
             <div
-              className={`w-14 absolute top-20 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-white max-lg:-top-10 ${i % 2 === 0 ? "left-full -translate-x-1/2 max-lg:left-1/2" : "right-full translate-x-1/2 max-lg:right-1/2 "}`}
+              className={`dark:bg-zinc-700 dark:border-zinc-700 transition-colors w-14 absolute top-20 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-gray-50 max-lg:-top-10 ${i % 2 === 0 ? "left-full -translate-x-1/2 max-lg:left-1/2" : "right-full translate-x-1/2 max-lg:right-1/2 "}`}
             >
               {data.year}
             </div>

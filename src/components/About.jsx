@@ -39,7 +39,10 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen max-sm:min-h-[50vh] pb-60 px-96 flex flex-col items-center justify-center ">
+    <div
+      id="about"
+      className="min-h-[50vh] max-sm:min-h-[50vh] pb-60 flex flex-col items-center justify-center "
+    >
       <div className="flex gap-4 max-lg:flex-col max-lg:">
         <Heading title="About Me" />
         <div className="w-full flex items-center justify-between ">
@@ -50,12 +53,12 @@ export default function About() {
           height={400}
           className="w-75 max-lg:w-50 max-md:hidden"
         /> */}
-          <div className="relative w-200 max-lg:w-100 rounded-xl bg-zinc-100 p-5 text-justify">
-            <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 max-md:hidden">
+          <div className="relative w-200 max-lg:w-100 rounded-xl bg-zinc-100 p-5 text-justify dark:bg-zinc-700">
+            <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 max-md:hidden dark:text-zinc-700 transition-colors">
               {arrowLeftIcon}
             </span>
             <motion.p
-              className="text-lg font-light text-gray-700 first-letter:pl-3 max-lg:text-[16px] max-sm:text-[14px] overflow-hidden flex flex-wrap "
+              className="text-lg font-light text-gray-700 first-letter:pl-3 max-lg:text-[16px] max-sm:text-[14px] overflow-hidden flex flex-wrap dark:text-white "
               variants={container}
               initial="hidden"
               animate="visible"

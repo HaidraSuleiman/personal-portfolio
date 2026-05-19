@@ -7,3 +7,7 @@
   --breakpoint-md: 47.9rem;
   --breakpoint-sm: 39.9rem;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@custom-variant light (&:where(.light, .light *));

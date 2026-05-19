@@ -42,12 +42,18 @@ export default function Hero() {
 
   return (
     <div
-      className="min-h-screen px-96 flex flex-col items-center justify-center"
+      id="home"
+      className="min-h-screen flex flex-col items-center justify-center"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
     >
       <div>
-        <div className="flex flex-col items-center justify-center gap-y-3 font-light capitalize">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="flex flex-col items-center justify-center gap-y-3 font-light capitalize"
+        >
           <motion.div
             className="felx items-center justify-center"
             style={{
@@ -57,21 +63,29 @@ export default function Hero() {
             }}
           >
             <Image
-              src="/HeroLogo.png"
+              src={"/herologolight.png"}
               alt="website logo"
               width={1000}
               height={1000}
               priority={true}
-              className="h-auto w-[150px]"
+              className="h-auto dark:hidden transition-all "
+            />
+            <Image
+              src={"/herologo1.png"}
+              alt="webiste logo dark"
+              width={1000}
+              height={1000}
+              priority
+              className="h-auto hidden dark:inline transition-all"
             />
           </motion.div>
-          <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 max-sm:text-2xl">
+          <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 max-sm:text-2xl dark:text-white transition-colors">
             My name is Haidra Suleiman &
           </h1>
-          <p className="text-lg tracking-wider text-gray-700">
+          <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
             I like web development
           </p>
-        </div>
+        </motion.div>
         <div className="mt-8 flex justify-center gap-x-10 text-3xl  text-yellow-600">
           {heroIcons.map((icon, i) => (
             <a

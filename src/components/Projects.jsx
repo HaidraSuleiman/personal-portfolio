@@ -22,7 +22,10 @@ export default function Projects() {
   }, [index]);
 
   return (
-    <div className="min-h-screen py-20 px-96 flex flex-col items-center ">
+    <div
+      id="projects"
+      className="min-h-screen py-20 flex flex-col items-center "
+    >
       <Heading title="Projects" />
       <div className="flex flex-wrap items-center justify-between gap-4 py-10 max-lg:w-160 max-lg:gap-0.5">
         {projectsButton.map((text, i) => (
