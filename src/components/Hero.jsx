@@ -80,10 +80,10 @@ export default function Hero() {
             />
           </motion.div>
           <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 max-sm:text-2xl dark:text-white transition-colors">
-            My name is Haidra Suleiman &
+            Haidra Suleiman
           </h1>
           <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
-            I like web development
+            Web Developer
           </p>
         </motion.div>
         <div className="mt-8 flex justify-center gap-x-10 text-3xl  text-yellow-600">
