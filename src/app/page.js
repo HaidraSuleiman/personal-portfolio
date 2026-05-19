@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Load />
       <Toggle>
-        <div className="w-min">
+        <div className="w-full">
           <Hero />
           <About />
           <Experience />
